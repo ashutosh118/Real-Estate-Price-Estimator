@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Calculator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-wrapper">
+            <img src="assets/mortgage-loan (1).png" alt="mortgage-loan" />
+        </div> 
+        <br>
+        <div class="input-wrapper">
+            <div class="wrapper">
+                <label for="area">&emsp;&ensp;Area (square feet)</label><br>
+                <input type="number" id="area" value="1000" />
+            </div>
+            <!-- <div class="wrapper">
+          <label for="rate">Rate:</label>
+          <input type="number" id="rate" value="5" />
+        </div> -->
+        </div>
+        <label for="location" style="text-align: center;">Location</label>
+        <div class="input-wrapper">
+            <!-- <input type="number" id="time" value="1" /> -->
+            <select name="location" id="location">
+                <option value="Location 1">Location 1</option>
+                <option value="Location 2">Location 2</option>
+            </select>
+        </div>
+        <br>
+        <label for="bhk" style="text-align: center;">Bedroom, Hall, and Kitchen (BHK)</label>
+        <div class="input-wrapper">
+            <div class="col">
+                <input type="radio" name="bhk" value="1" id="opt1">
+                <label for="opt1" class="label">
+                    <span>1</span>
+                </label>
+                <input type="radio" name="bhk" value="2" id="opt2">
+                <label for="opt2" class="label">
+                    <span>2</span>
+                </label>
+                <input type="radio" name="bhk" value="3" id="opt3">
+                <label for="opt3" class="label">
+                    <span>3</span>
+                </label>
+                <input type="radio" name="bhk" value="4" id="opt4">
+                <label for="opt4" class="label">
+                    <span>4</span>
+                </label>
+                <input type="radio" name="bhk" value="5" id="opt5">
+                <label for="opt5" class="label">
+                    <span>5</span>
+                </label>
+            </div>
+        </div>
+        <br>
+        <label for="bathroom" style="text-align: center;">Bathroom</label>
+        <div class="input-wrapper">
+            <div class="col">
+                <input type="radio" name="bathroom" value="1" id="opt6">
+                <label for="opt6" class="label">
+                    <span>1</span>
+                </label>
+                <input type="radio" name="bathroom" value="2" id="opt7">
+                <label for="opt7" class="label">
+                    <span>2</span>
+                </label>
+                <input type="radio" name="bathroom" value="3" id="opt8">
+                <label for="opt8" class="label">
+                    <span>3</span>
+                </label>
+                <input type="radio" name="bathroom" value="4" id="opt9">
+                <label for="opt9" class="label">
+                    <span>4</span>
+                </label>
+                <input type="radio" name="bathroom" value="5" id="opt10">
+                <label for="opt10" class="label">
+                    <span>5</span>
+                </label>
+            </div>
+        </div><br><br>
+        <button id="calculate-btn">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <!-- Script -->
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
